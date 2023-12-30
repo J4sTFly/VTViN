@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Задача 12</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>Карта сокровищ</h1>
+    <hr>
+    <img src="https://lms.bsuir.by/pluginfile.php/404187/mod_resource/content/4/task12.jpg" alt="Map" usemap="#trip">
+    <p> Пройдено:
+        <progress id="progressBar" max="100" value="0"></progress>
+    </p>
+    <map name="trip">
+        <area class="checkpoint" shape="rect" coords="210, 180, 260, 295" href="#" title="Корабль">
+        <area class="checkpoint" shape="rect" coords="390, 10, 480, 60" href="#" title="Акула">
+        <area class="checkpoint" shape="rect" coords="43, 220, 115, 290" href="#" title="Осьминог">
+        <area class="checkpoint" shape="rect" coords="240, 70, 300, 150" href="#" title="Клад">
+    </map>
+    <hr>
+    <p><i>www.bsuir.by</i></p>
+</body>
+
+<script>
+    $(function(){
+        const progressBar = $('#progressBar')
+        const checkPoints = $('.checkpoint')
+        const checkPointsNum = checkPoints.length
+
+        checkPoints.on('click', function(e){
+            const cp = e.target;
+            progressBar.attr('value', (($.inArray(cp, checkPoints) + 1) / checkPointsNum)*100)
+        })
+    })
+</script>
+</html>

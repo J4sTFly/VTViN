@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Задача 11</title>
+</head>
+<body>
+    <h1>Химические элементы</h1>
+    <hr>
+    <div class="table">
+        <div class="row">
+            <div class="col">Номер</div>
+            <div class="col">Название</div>
+            <div class="col">Символ</div>
+            <div class="col">Год</div>
+            <div class="col">Статья</div>
+        </div>
+        <div class="row">
+            <div class="col">1</div>
+            <div class="col">
+                <a href="#">Водород</a>
+            </div>
+            <div class="col">
+                <b>H</b>
+            </div>
+            <div class="col">1766</div>
+            <div class="col"><a href="#"><img></a></div>
+        </div>
+        <div class="row">
+            <div class="col">2</div>
+            <div class="col">
+                <a href="#">Гелий</a>
+            </div>
+            <div class="col">
+                <b>He</b>
+            </div>
+            <div class="col">1895</div>
+            <div class="col"><a href="#"><img></a></div>
+        </div>
+        <div class="row">
+            <div class="col">3</div>
+            <div class="col">
+                <a href="#">Бор</a>
+            </div>
+            <div class="col">
+                <b>B</b>
+            </div>
+            <div class="col">1808</div>
+            <div class="col"><a href="#"><img></a></div>
+        </div>
+    </div>
+    <hr>
+    <p>&commat;www.bsuir.by</p>
+</body>
+<style>
+    .table {
+        width: 400px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction:column;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        flex: 1;
+    }
+
+    .row div {
+        min-width: 80px;
+    }
+
+    img {
+        content: url('https://lms.bsuir.by/pluginfile.php/404187/mod_resource/content/4/task11.png');
+        width: 32px;
+    }
+</style>
+</html>
