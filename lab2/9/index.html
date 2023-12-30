@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="index.html" method="put">
+        <fieldset>
+            <legend><h2>Выберите любимый фрукт</h2></legend>
+            <label for="fruit">Фрукт</label> <select name="fruit" required>
+                <option disabled selected></option>
+                <option>Абрикос</option>
+                <option>Айва</option>
+                <option>Ананас</option>
+                <option>Апельсин</option>
+                <option>Арбуз</option>
+            </select>
+        </fieldset>
+        <button type="submit">Отправить информацию</button>
+    </form>
+</body>
+<style>
+    label {
+        margin-right: 50px;
+    }
+
+    select {
+        width: 150px;
+    }
+
+    button[type='submit']{
+        margin-top: 15px;
+        width: 180px;
+        height: 50px;
+        padding: 1px;
+    }
+</style>
+</html>
+
