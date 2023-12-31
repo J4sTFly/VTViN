@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="index.html" method="post">
+        <input type="text" placeholder="Ваше имя">
+        <input type="text" placeholder="Ваш e-mail">
+        <input type="text" placeholder="Ваш телефон" required>
+        <input type="text" placeholder="Пароль" required>
+        <input type="text" placeholder="Пароль еще раз" required>
+        <button type="submit">Регистрация</button>
+    </form>
+</body>
+<style>
+    form {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 320px;
+        height: 320px;
+        padding: 15px;
+        background-color: #fff;
+    }
+
+    input {
+        line-height: 3em;
+        border: 1px solid #ccc;
+    }
+
+    button {
+        background-color: #1cbc11;
+        border: unset;
+        line-height: 3em;
+    }
+
+    button:hover {
+        background-color: #14a20a;
+        cursor: pointer;
+    }
+</style>
+</html>

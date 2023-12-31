@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Категория</a></li>
+        <li><span>Продукт</span></li>
+    </ul>
+</body>
+<style>
+    ul {
+        list-style: none;
+    }
+
+    li {
+        display: inline-block;
+    }
+
+    a {
+        text-decoration: none;
+        color: #0b56ea;
+    }
+
+    li::after {
+        content: '>';
+        margin: 0px 5px;
+        font-size: 0.8em;
+    }
+
+    li:last-child::after {
+        content: '';
+        margin: 0px;
+    }
+
+    span {
+        color: #333;
+    }
+</style>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>header</header>
+    <aside>sidebar</aside>
+    <div>content</div>
+    <footer>footer</footer>
+</body>
+<style>
+    body {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: 1px 1px;
+    }
+    body * {
+        border: 1px solid black;
+    }
+    header {
+        width: 99vw;
+        height: 20vh;
+        border-width: 2px 2px 0px 2px;
+    }
+
+    aside{
+        display: table-cell;
+        width: 25%;
+        height: 50vh;
+        margin: 0px;
+        border-right: 2px solid #000;
+    }  
+
+    div {
+        width: 74%;
+    }
+
+    footer {
+        width: 99vw;
+        height: 25vh;
+        border-width: 0px 2px 2px 2px;
+    }
+
+</style>
+</html>

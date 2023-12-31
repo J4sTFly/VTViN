@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div>
+            Usual link
+        </div>
+        <div>
+            Dropdown list
+            <div class="dropdown">
+                <a href="#">link</a>
+                <a href="#">link</a>
+            </div>
+        </div>
+        <div>
+            Usual link
+        </div>
+    </header>
+</body>
+<style>
+    header {
+        color: #fff;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 300px;
+        margin: auto;
+        background-color: #444;
+    }
+
+    div:hover {
+        background-color: #333;
+    }
+
+    .dropdown {
+        position: absolute;
+        background-color: #333;
+        float: right;
+        display: none; 
+        list-style: none;
+        padding-left: 0px;
+        height: 60px;
+    }
+    
+    .dropdown a{
+        display: block;
+        min-width: 100px;
+        text-decoration: none;
+        color: #fff;
+        line-height: 30px;
+    }
+
+    div:hover .dropdown, .dropdown:hover {
+        display: block;
+    }
+
+</style>
+</html>

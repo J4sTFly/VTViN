@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div>&lt;</div>
+        <div class="active">1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>&gt;</div>
+    </nav>
+    
+</body>
+<style>
+    nav {
+        display: flex;
+        width: 230px;
+        margin: auto;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav div {
+        width: 40px;
+        height: 40px;
+        background-color: #ddd;
+        color: #333;
+        text-align: center;
+        line-height: 40px;
+    }
+    
+    nav div:not(.active):hover {
+        background-color: #ccc;
+        cursor: pointer;
+    }
+
+    nav div.active {
+        background-color:#d10953;
+        color: #fff;
+
+    }
+</style>
+</html>
