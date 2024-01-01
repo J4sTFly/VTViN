@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Document</title>
+</head>
+<body>
+    <div class="one">Ширина задана в процентах, если уменьшить окно браузера и навести мышку на текст абзаца - будет интересный эффект</div>
+    <div class="two">Тут бессмысленный длинный текст.Тут бессмысленный длинный текст.Тут бессмысленный длинный текст.Тут бессмысленный длинный текст.Тут бессмысленный длинный текст.Тут бессмысленный длинный текст.</div>
+</body>
+<style>
+    div {
+        overflow: hidden;
+        white-space: nowrap;
+        border: 1px solid black;
+        width: 99%;
+        line-height: 2;
+        margin-bottom: 2%;
+        padding: 0px 5px;
+    }
+
+    .one {
+        text-overflow: clip;
+    }
+
+    .two {
+        text-overflow: ellipsis;
+    }
+</style>
+</html>

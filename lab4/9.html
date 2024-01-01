@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        Фильтр grayscale
+        <div class="container">
+            <img src="img.png">
+            <img src="img.png">
+        </div>
+        Фильтр saturate
+        <div class="container">
+            <img src="img.png">
+            <img src="img.png">
+        </div>
+        Фильтр invert
+        <div class="container">
+            <img src="img.png">
+            <img src="img.png">
+        </div>
+    </div>
+    <div class="wrapper">
+        Фильтр sepia
+        <div class="container">
+            <img src="img.png">
+            <img src="img.png">
+        </div>
+        Фильтр hue-rotate
+        <div class="container">
+            <img src="img.png">
+            <img src="img.png">
+        </div>
+        Фильтр contrast
+        <div class="container">
+            <img src="img.png">
+            <img src="img.png">
+        </div>
+    </div>
+</body>
+<style>
+    body {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .container {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .wrapper:first-child { 
+        .container:first-child img:last-child {
+            filter: grayscale(100%);
+        }
+        .container:nth-child(2) img:last-child {
+            filter: saturate(300%);
+        }
+
+        .container:last-child img:last-child {
+            filter: invert(100%);
+        }
+    }
+
+    .wrapper:nth-child(2) {
+        .container:first-child img:last-child {
+            filter: sepia(100%);
+        }
+        .container:nth-child(2) img:last-child {
+            filter: hue-rotate(100deg);
+        }
+        .container:last-child img:last-child {
+            filter: contrast(500%);
+        }
+    }
+
+</style>
+</html>

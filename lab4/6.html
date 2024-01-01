@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="one">Текст с тенью.</p>
+    <p class="two">Текст с тенью + размытие.</p>
+    <p class="three">Текст с двумя тенями.</p>
+    <p class="four">Вдавленный текст.</p>
+    <p class="five">Объемный текст.</p>
+    <p class="six">Контур.</p>
+</body>
+<style>
+    .one {
+        text-shadow: 10px 10px 0px rgba(0,0,0,0.5);
+    }
+
+    .two {
+        text-shadow: 10px 10px 2px rgba(0,0,0,0.5);
+    }
+    
+    .three {
+        text-shadow: 4px 4px 0px rgba(255,0,0, 0.7), -4px -4px 0px rgba(0,0,255, 0.7);
+    }
+
+    .four {
+        color: rgba(0, 0, 0, 0.5);
+        text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+    }
+
+    .five {
+        color: rgb(223, 201, 174);
+        text-shadow: 1.1px 1.1px 2px rgba(223, 201, 174, 0.3), -1.1px -1.1px 0 rgba(223, 201, 174, 0.3);
+    }
+
+    .six {
+        color: rgb(223, 201, 174);
+        -webkit-text-stroke: 0.5px rgb(141, 128, 111);
+        text-stroke: 0.5px rgb(141, 128, 111);
+    }
+
+</style>
+</html>

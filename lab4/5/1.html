@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="f"></div>
+        <div class="f"></div>
+        <div class="f"></div>
+    </div>
+    <div class="one"></div>
+    <div class="two"></div>
+</body>
+<style>
+    .wrapper {
+        display: flex;
+        width: 620px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .f {
+        min-width: 200px;
+        min-height: 200px;
+
+        background-color: black;
+    }
+
+    .f:first-child {
+        background: linear-gradient(0deg, rgba(254,255,3,0.4206057422969187) 0%, rgba(255,244,0,1) 100%);
+    }
+    
+    .f:nth-child(2) {
+        background: linear-gradient(270deg, rgba(254,255,3,0.4206057422969187) 0%, rgba(255,244,0,1) 100%);
+    }
+
+    .f:last-child {
+        background: linear-gradient(90deg, rgba(254,255,3,0.4206057422969187) 0%, rgba(255,244,0,1) 100%);
+    }
+
+    .one, .two {
+        margin-top: 10px;
+        display: inline-block;
+        height: 200px;
+        background-color: black;
+    }
+
+    .one {
+        width: 300px;
+        background: linear-gradient(0deg, rgba(255,3,3,1) 0%, rgba(255,0,0,1) 33%, rgba(255,255,255,1) 34%, rgba(255,255,255,1) 66%, rgba(255,0,0,1) 67%, rgba(255,15,3,1) 100%);
+    }
+
+    .two {
+        width: 318px;
+        background: linear-gradient(90deg, rgba(255,3,3,1) 0%, rgba(0,0,255,1) 46%, rgba(255,255,255,1) 74%, rgba(255,15,3,1) 92%);
+    }
+
+</style>
+</html>
